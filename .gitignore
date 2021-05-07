@@ -1,0 +1,6 @@
+*.DS_Store*
+*.xcuserdatad*
+*.xcuserstate
+*.xcbkptlist
+.idea
+Pods/

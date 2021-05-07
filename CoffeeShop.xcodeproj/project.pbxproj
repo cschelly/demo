@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF06917F24DD0297008344F1 /* ConsentPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF06917E24DD0297008344F1 /* ConsentPreferences.swift */; };
+		CF54DAD124DC6A8900D2E044 /* CoffeeMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54DAD024DC6A8900D2E044 /* CoffeeMenuView.swift */; };
+		CF54DADA24DC6D5900D2E044 /* MParticleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54DAD924DC6D5900D2E044 /* MParticleManager.swift */; };
+		CF54DADC24DC70A100D2E044 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54DADB24DC70A100D2E044 /* HomeView.swift */; };
+		CFA2C92024EC6B90000EEF71 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2C91F24EC6B90000EEF71 /* SettingsView.swift */; };
+		CFA2C92224EC6BF5000EEF71 /* TealiumConsentModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA2C92124EC6BF5000EEF71 /* TealiumConsentModal.swift */; };
+		CFB5460E2640F2A0006C5BBE /* mParticle-Apple-SDK in Frameworks */ = {isa = PBXBuildFile; productRef = CFB5460D2640F2A0006C5BBE /* mParticle-Apple-SDK */; };
+		CFB546102640F37D006C5BBE /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5460F2640F37D006C5BBE /* Tokens.swift */; };
+		CFB546162644E6CB006C5BBE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB546152644E6CA006C5BBE /* Colors.swift */; };
+		CFB546182644EACC006C5BBE /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = CFB546172644EACC006C5BBE /* products.json */; };
+		CFB5461A2644ED48006C5BBE /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB546192644ED48006C5BBE /* Product.swift */; };
+		CFB5461C2644ED98006C5BBE /* JsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB5461B2644ED98006C5BBE /* JsonLoader.swift */; };
+		CFE12B7924DC851B00BF67F1 /* CoffeeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE12B7824DC851B00BF67F1 /* CoffeeContentView.swift */; };
+		CFEFAE0B24DC5F6B00E09533 /* CoffeeShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEFAE0A24DC5F6B00E09533 /* CoffeeShopApp.swift */; };
+		CFEFAE0F24DC5F6C00E09533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFEFAE0E24DC5F6C00E09533 /* Assets.xcassets */; };
+		CFEFAE1224DC5F6C00E09533 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFEFAE1124DC5F6C00E09533 /* Preview Assets.xcassets */; };
+		CFEFAE1A24DC5FC500E09533 /* PinkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEFAE1924DC5FC500E09533 /* PinkButtonView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF06917E24DD0297008344F1 /* ConsentPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentPreferences.swift; sourceTree = "<group>"; };
+		CF54DAD024DC6A8900D2E044 /* CoffeeMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMenuView.swift; sourceTree = "<group>"; };
+		CF54DAD924DC6D5900D2E044 /* MParticleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MParticleManager.swift; sourceTree = "<group>"; };
+		CF54DADB24DC70A100D2E044 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CFA2C91F24EC6B90000EEF71 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CFA2C92124EC6BF5000EEF71 /* TealiumConsentModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TealiumConsentModal.swift; sourceTree = "<group>"; };
+		CFB5460F2640F37D006C5BBE /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
+		CFB546152644E6CA006C5BBE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CFB546172644EACC006C5BBE /* products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		CFB546192644ED48006C5BBE /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CFB5461B2644ED98006C5BBE /* JsonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoader.swift; sourceTree = "<group>"; };
+		CFE12B7824DC851B00BF67F1 /* CoffeeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeContentView.swift; sourceTree = "<group>"; };
+		CFEFAE0724DC5F6B00E09533 /* CoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFEFAE0A24DC5F6B00E09533 /* CoffeeShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopApp.swift; sourceTree = "<group>"; };
+		CFEFAE0E24DC5F6C00E09533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFEFAE1124DC5F6C00E09533 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CFEFAE1324DC5F6C00E09533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFEFAE1924DC5FC500E09533 /* PinkButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinkButtonView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFEFAE0424DC5F6B00E09533 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB5460E2640F2A0006C5BBE /* mParticle-Apple-SDK in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFB546112644E603006C5BBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFE12B7824DC851B00BF67F1 /* CoffeeContentView.swift */,
+				CF54DAD024DC6A8900D2E044 /* CoffeeMenuView.swift */,
+				CFA2C91F24EC6B90000EEF71 /* SettingsView.swift */,
+				CFEFAE1924DC5FC500E09533 /* PinkButtonView.swift */,
+				CF54DADB24DC70A100D2E044 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFB546122644E63F006C5BBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CFB5460F2640F37D006C5BBE /* Tokens.swift */,
+				CF06917E24DD0297008344F1 /* ConsentPreferences.swift */,
+				CFB546172644EACC006C5BBE /* products.json */,
+				CFB546192644ED48006C5BBE /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CFB546132644E65B006C5BBE /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFA2C92124EC6BF5000EEF71 /* TealiumConsentModal.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		CFB546142644E6B9006C5BBE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CFB546152644E6CA006C5BBE /* Colors.swift */,
+				CFB5461B2644ED98006C5BBE /* JsonLoader.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CFEFADFE24DC5F6B00E09533 = {
+			isa = PBXGroup;
+			children = (
+				CFEFAE0924DC5F6B00E09533 /* CoffeeShop */,
+				CFEFAE0824DC5F6B00E09533 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFEFAE0824DC5F6B00E09533 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFEFAE0724DC5F6B00E09533 /* CoffeeShop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFEFAE0924DC5F6B00E09533 /* CoffeeShop */ = {
+			isa = PBXGroup;
+			children = (
+				CF54DAD924DC6D5900D2E044 /* MParticleManager.swift */,
+				CFEFAE0A24DC5F6B00E09533 /* CoffeeShopApp.swift */,
+				CFB546122644E63F006C5BBE /* Models */,
+				CFB546112644E603006C5BBE /* Views */,
+				CFB546132644E65B006C5BBE /* Supporting Views */,
+				CFB546142644E6B9006C5BBE /* Utilities */,
+				CFEFAE0E24DC5F6C00E09533 /* Assets.xcassets */,
+				CFEFAE1324DC5F6C00E09533 /* Info.plist */,
+				CFEFAE1024DC5F6C00E09533 /* Preview Content */,
+			);
+			path = CoffeeShop;
+			sourceTree = "<group>";
+		};
+		CFEFAE1024DC5F6C00E09533 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CFEFAE1124DC5F6C00E09533 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFEFAE0624DC5F6B00E09533 /* CoffeeShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFEFAE1624DC5F6C00E09533 /* Build configuration list for PBXNativeTarget "CoffeeShop" */;
+			buildPhases = (
+				CFEFAE0324DC5F6B00E09533 /* Sources */,
+				CFEFAE0424DC5F6B00E09533 /* Frameworks */,
+				CFEFAE0524DC5F6B00E09533 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffeeShop;
+			packageProductDependencies = (
+				CFB5460D2640F2A0006C5BBE /* mParticle-Apple-SDK */,
+			);
+			productName = CoffeeShop;
+			productReference = CFEFAE0724DC5F6B00E09533 /* CoffeeShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFEFADFF24DC5F6B00E09533 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					CFEFAE0624DC5F6B00E09533 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = CFEFAE0224DC5F6B00E09533 /* Build configuration list for PBXProject "CoffeeShop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFEFADFE24DC5F6B00E09533;
+			packageReferences = (
+				CFB5460C2640F2A0006C5BBE /* XCRemoteSwiftPackageReference "mparticle-apple-sdk" */,
+			);
+			productRefGroup = CFEFAE0824DC5F6B00E09533 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFEFAE0624DC5F6B00E09533 /* CoffeeShop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFEFAE0524DC5F6B00E09533 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFB546182644EACC006C5BBE /* products.json in Resources */,
+				CFEFAE1224DC5F6C00E09533 /* Preview Assets.xcassets in Resources */,
+				CFEFAE0F24DC5F6C00E09533 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFEFAE0324DC5F6B00E09533 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFEFAE1A24DC5FC500E09533 /* PinkButtonView.swift in Sources */,
+				CFB546162644E6CB006C5BBE /* Colors.swift in Sources */,
+				CFA2C92024EC6B90000EEF71 /* SettingsView.swift in Sources */,
+				CFE12B7924DC851B00BF67F1 /* CoffeeContentView.swift in Sources */,
+				CFEFAE0B24DC5F6B00E09533 /* CoffeeShopApp.swift in Sources */,
+				CFB5461A2644ED48006C5BBE /* Product.swift in Sources */,
+				CF54DADC24DC70A100D2E044 /* HomeView.swift in Sources */,
+				CF54DADA24DC6D5900D2E044 /* MParticleManager.swift in Sources */,
+				CF54DAD124DC6A8900D2E044 /* CoffeeMenuView.swift in Sources */,
+				CF06917F24DD0297008344F1 /* ConsentPreferences.swift in Sources */,
+				CFA2C92224EC6BF5000EEF71 /* TealiumConsentModal.swift in Sources */,
+				CFB546102640F37D006C5BBE /* Tokens.swift in Sources */,
+				CFB5461C2644ED98006C5BBE /* JsonLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CFEFAE1424DC5F6C00E09533 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFEFAE1524DC5F6C00E09533 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFEFAE1724DC5F6C00E09533 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CoffeeShop/Preview Content\"";
+				DEVELOPMENT_TEAM = XC939GDC9P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CoffeeShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tealium.CoffeeShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFEFAE1824DC5F6C00E09533 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CoffeeShop/Preview Content\"";
+				DEVELOPMENT_TEAM = XC939GDC9P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CoffeeShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tealium.CoffeeShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFEFAE0224DC5F6B00E09533 /* Build configuration list for PBXProject "CoffeeShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFEFAE1424DC5F6C00E09533 /* Debug */,
+				CFEFAE1524DC5F6C00E09533 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFEFAE1624DC5F6C00E09533 /* Build configuration list for PBXNativeTarget "CoffeeShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFEFAE1724DC5F6C00E09533 /* Debug */,
+				CFEFAE1824DC5F6C00E09533 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CFB5460C2640F2A0006C5BBE /* XCRemoteSwiftPackageReference "mparticle-apple-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mParticle/mparticle-apple-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CFB5460D2640F2A0006C5BBE /* mParticle-Apple-SDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFB5460C2640F2A0006C5BBE /* XCRemoteSwiftPackageReference "mparticle-apple-sdk" */;
+			productName = "mParticle-Apple-SDK";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CFEFADFF24DC5F6B00E09533 /* Project object */;
+}
