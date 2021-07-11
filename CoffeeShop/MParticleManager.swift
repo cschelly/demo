@@ -7,6 +7,9 @@
 
 import Foundation
 import mParticle_Apple_SDK
+import mParticle_Iterable
+//import IterableSDK
+
 
 public struct MParticleFlag {
     var key: String
@@ -23,6 +26,34 @@ class MParticleManager {
     private init() {
         options.environment = .development
         options.logLevel = .debug
+        options.proxyAppDelegate = false // this might be the issue (the app delegate proxy)
+        
+        let request = MPIdentityApiRequest()
+        request.email = "email@example.com"
+        options.identifyRequest = request
+        
+        options.onIdentifyComplete = { (apiResult, error) in
+            print("🍩 MParticle Identify complete. userId = \(apiResult?.user.userId.stringValue ?? "Null User ID") error = \(error?.localizedDescription ?? "No Error Available")")
+            
+            if MParticle.sharedInstance().isKitActive(1003) {
+                print("🍩 iterable active")
+            }
+            
+        }
+        
+        options.onAttributionComplete = { result, error in
+            if let error = error {
+                print("🍩 Attribution fetching for kitCode=\(String(describing: (error as NSError).userInfo[mParticleKitInstanceKey])) failed with error=\(error)")
+                return
+            }
+
+            if let kitCode = result?.kitCode,
+               let linkInfo = result?.linkInfo {
+                print("🍩 Attribution fetching for kitCode=\(kitCode) completed with linkInfo: \(linkInfo)")
+            }
+
+        }
+        
         MParticle.sharedInstance().start(with: options)
     }
 
@@ -80,13 +111,45 @@ class MParticleManager {
                price: price as NSNumber)
     }
     
+    // MARK: Push and In App
+    class func didReceiveRemoteNotification(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        MParticle.sharedInstance().didReceiveRemoteNotification(userInfo)
+        // Do I need this?
+//        IterableAppIntegration.application(application, didReceiveRemoteNotification: userInfo, fetchCompletionHandler: completionHandler)
+    }
+    
+    class func open(url: URL) {
+        MParticle.sharedInstance().open(url, options: [:])
+    }
+    
+    class func register(token: Data) {
+        MParticle.sharedInstance().didRegisterForRemoteNotifications(withDeviceToken: token)
+        // Do I need this?
+        // IterableAPI.register(token: token)
+    }
+    
+    class func application(continue userActivity: NSUserActivity,
+                     restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) {
+        MParticle.sharedInstance().continue(userActivity, restorationHandler: restorationHandler)
+    }
+    
+    class func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification) {
+        MParticle.sharedInstance().userNotificationCenter(center, willPresent: notification)
+    }
+    
+    class func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        MParticle.sharedInstance().userNotificationCenter(center, didReceive: response)
+        // Do I need this?
+//        IterableAppIntegration.userNotificationCenter(center, didReceive: response, withCompletionHandler: completionHandler)
+    }
+    
+    // MARK: Consent Management
 //    class func consentPreferencesUpdated(with categories: [String]) {
 //        guard categories.count > 0 else {
-//            TealiumHelper.shared.tealium?.consentManager?.userConsentStatus = .notConsented
+//            [Vendor].userConsentStatus = .notConsented
 //            return
 //        }
-//        TealiumHelper.shared.tealium?.consentManager?.userConsentCategories = TealiumConsentCategories.consentCategoriesStringArrayToEnum(categories)
+//        [Vendor].userConsentCategories = [Vendor].consentCategoriesStringArrayToEnum(categories)
 //    }
 
 }
-

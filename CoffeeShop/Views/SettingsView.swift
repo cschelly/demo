@@ -63,9 +63,9 @@ struct SettingsView: View {
                                 stringCategories = consent.categories.filter {
                                     $0.status == true
                                 }.map(\.name)
-                                //TealiumHelper.consentPreferencesUpdated(with: stringCategories)
+                                // Call vendor "consent preferences updated"
                     }) {
-                        TealiumConsentModal()
+                        ConsentModal()
                     }.onAppear {
                         MParticleManager.logScreen("privacy_modal_view")
                     }

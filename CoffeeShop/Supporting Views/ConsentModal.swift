@@ -1,5 +1,5 @@
 //
-//  TealiumConsentModal.swift
+//  ConsentModal.swift
 //  CoffeeShop
 //
 //  Created by Christina S on 8/18/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TealiumConsentModal: View {
+struct ConsentModal: View {
     @EnvironmentObject var consent: Consent
     var body: some View {
         NavigationView {
@@ -49,6 +49,6 @@ struct ConsentRow: View {
 
 struct TealiumConsentModal_Previews: PreviewProvider {
     static var previews: some View {
-        TealiumConsentModal()
+        ConsentModal()
     }
 }

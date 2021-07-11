@@ -22,11 +22,11 @@ struct CoffeeMenuView: View {
             .navigationTitle("The Coffee Shop")
             .onAppear {
                 //let itemList = (ids: CoffeeMenu.items.map(\.id), names: CoffeeMenu.items.map(\.name))
-                CoffeeMenu.items.map {
-                    MParticleManager.productFrom(id: $0.id, name: $0.name, price: Double($0.price)!)
-                }.forEach {
-                    MParticleManager.logProductImpression(with: "coffee_menu_view", product: $0)
-                }
+//                CoffeeMenu.items.map {
+//                    MParticleManager.productFrom(id: $0.id, name: $0.name, price: Double($0.price)!)
+//                }.forEach {
+//                    MParticleManager.logProductImpression(with: "coffee_menu_view", product: $0)
+//                }
             }
         }
     }
@@ -48,7 +48,7 @@ struct CoffeeGridItem: View {
                 .bold()
             Text("$\(item.price)")
                 .padding(.bottom, 10)
-            PinkButtonView(title: "Add To Cart", imageName: "cart.fill") {
+            CustomButtonView(title: "Add To Cart", imageName: "cart.fill") {
                 guard let price = Double(item.price) else {
                     return
                 }

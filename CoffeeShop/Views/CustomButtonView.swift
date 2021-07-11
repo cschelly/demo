@@ -1,5 +1,5 @@
 //
-//  PinkButtonView.swift
+//  CustomButtonView.swift
 //  AppClipTest
 //
 //  Created by Christina S on 8/3/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PinkButtonView: View {
+struct CustomButtonView: View {
     var title: String
     var imageName: String?
     var action: () -> Void
@@ -40,7 +40,7 @@ struct PinkButtonView: View {
 
 struct PinkButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        PinkButtonView(title: "Tester Ooni", imageName: "car") {
+        CustomButtonView(title: "Tester Ooni", imageName: "car") {
             // ...
         }
     }
